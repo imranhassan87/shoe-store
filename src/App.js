@@ -7,6 +7,7 @@ import Items from './components/Items';
 
 function App() {
   useEffect(() => {
+    gsap.to("body", 0, { css: { visibility: "visible" } });
     const tl = gsap.timeline()
     tl.from('.header', 1.1, {
       y: -150,
