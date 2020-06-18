@@ -1,24 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import gsap, { Back } from 'gsap'
+import './styles/app.scss'
+import Header from './components/Header'
+import Banner from './components/Banner'
+import Items from './components/Items';
 
 function App() {
+  useEffect(() => {
+    const tl = gsap.timeline()
+    tl.from('.header', 1.1, {
+      y: -150,
+      ease: Back.easeOut
+    })
+    tl.from('.link', 1.3, {
+      opacity: 0,
+      x: 70,
+      ease: 'Power3.easeOut',
+      stagger: {
+        amount: 0.4
+      }
+    })
+  }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Banner />
+      <Items />
     </div>
   );
 }

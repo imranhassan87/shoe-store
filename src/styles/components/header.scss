@@ -1,0 +1,24 @@
+.header {
+    height: 65px;
+    background: #7e5aa7;
+    width: 100%;
+    overflow: hidden;
+    .logo {
+        margin-top: 10px;
+        span {
+            font-weight: 700;
+            font-size: 19px;
+        }
+    }
+    .nav-routes {
+        .link {
+            margin-top: 10px;
+            font-weight: 600;
+            padding: 0 14px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 17px;
+            color: #000;
+        }
+    }
+}

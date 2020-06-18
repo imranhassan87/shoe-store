@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import "./components/header.scss";
+@import "./components/banner.scss";
+@import "./components/items.scss";
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato";
+}
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 0 12px;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.v-center {
+    align-items: center;
+    text-align: center;
+}
