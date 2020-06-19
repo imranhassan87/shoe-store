@@ -1,20 +1,23 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-
-import { } from '../store/store'
+import { Link } from 'react-router-dom'
 
 
 const Items = () => {
     const items = useSelector(state => state.items)
     return (
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap', flexDirection: 'row', marginTop: 40 }}>
-            {items.map((item) => <div key={item.id} className="card">
+            <div className="icon">1</div>
+            {items.map((item, i) => <div key={i} className="card">
                 <img src={require(`../images/${item.image}.jpg`)} alt="" />
                 <div className="card-info">
                     <h4>{item.title}</h4>
                     <span>Rs. {item.price}</span>
                 </div>
-                <button className="btn"> Add to Basket</button>
+                <div className="btn-cont row space-between v-center">
+                    <button className="btn"> Add to Basket</button>
+                    <Link to={`${i}`} className="btn"> Details</Link>
+                </div>
             </div>
             )}
         </div>

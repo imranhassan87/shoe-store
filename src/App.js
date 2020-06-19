@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react';
 import gsap, { Back } from 'gsap'
+import { Routes, BrowserRouter as Router, Route } from 'react-router-dom'
 import './styles/app.scss'
-import Header from './components/Header'
-import Banner from './components/Banner'
-import Items from './components/Items';
+import Home from './components/Home';
+import Contact from './components/Contact';
+import Header from './components/Header';
+import Cart from './components/Cart';
+import ItemDetails from './components/ItemDetails';
 
 function App() {
   useEffect(() => {
@@ -24,9 +27,15 @@ function App() {
   }, [])
   return (
     <div>
-      <Header />
-      <Banner />
-      <Items />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+          <Route path=':id' exact element={<ItemDetails />} />
+          <Route path='/contact' exact element={<Contact />} />
+          <Route path='/cart' exact element={<Cart />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

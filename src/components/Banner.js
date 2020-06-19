@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaShoppingCart } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Banner = () => {
     return (
@@ -9,8 +10,7 @@ const Banner = () => {
                     alt="s" />
                 <h2>The Best Selling Brands Store</h2>
             </div>
-            <div className="icon">1</div>
-            <FaShoppingCart color="#ccc" size='3rem' style={{ position: 'relative', bottom: 45 }} />
+            <Link to='/cart'><FaShoppingCart color="#ccc" size='3rem' style={{ position: 'relative', bottom: 45 }} /></Link>
         </section>
     )
 }
