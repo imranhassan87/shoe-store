@@ -5,7 +5,7 @@ import './styles/app.scss'
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Header from './components/Header';
-import Cart from './components/Cart';
+import Basket from './components/Basket';
 import ItemDetails from './components/ItemDetails';
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
           <Route path='/' exact element={<Home />} />
           <Route path=':id' exact element={<ItemDetails />} />
           <Route path='/contact' exact element={<Contact />} />
-          <Route path='/cart' exact element={<Cart />} />
+          <Route path='/basket' exact element={<Basket />} />
         </Routes>
       </Router>
     </div>

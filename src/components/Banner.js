@@ -10,7 +10,7 @@ const Banner = () => {
                     alt="s" />
                 <h2>The Best Selling Brands Store</h2>
             </div>
-            <Link to='/cart'><FaShoppingCart color="#ccc" size='3rem' style={{ position: 'relative', bottom: 45 }} /></Link>
+            <Link to='/basket'><FaShoppingCart color="#ccc" size='3rem' style={{ position: 'relative', bottom: 45 }} /></Link>
         </section>
     )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import { store, add } from '../store/store'
 
 const ItemDetails = () => {
     const { id } = useParams()
@@ -10,7 +11,7 @@ const ItemDetails = () => {
             <img src={require(`../images/${image}.jpg`)} alt="item" />
             <h3>{title}</h3>
             <span>{price}</span>
-            <button className="btn"> Add to Basket</button>
+            <button className="btn" onClick={() => store.dispatch(add({ title, image, price }))}> Add to Basket</button>
         </div>
     )
 }

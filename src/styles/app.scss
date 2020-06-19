@@ -3,6 +3,7 @@
 @import "./components/banner.scss";
 @import "./components/items.scss";
 @import "./components/itemDetail.scss";
+@import "./components/basket.scss";
 
 html,
 body {
@@ -30,4 +31,32 @@ body {
 .v-center {
     align-items: center;
     text-align: center;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    h4 {
+        font-size: 26px;
+    }
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #333;
+        border-radius: 5px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 17px;
+        height: 40px;
+        padding: 4px;
+        width: 90px;
+        transition: 0.5s;
+        &:hover {
+            color: #000000;
+            background: #ccc;
+        }
+    }
 }
