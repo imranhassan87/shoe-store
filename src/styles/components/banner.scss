@@ -3,6 +3,8 @@
     width: 100%;
 
     .shoe-cont {
+        margin-top: 40px;
+        position: static;
         img {
             width: 25%;
         }
@@ -13,4 +15,21 @@
             bottom: 50px;
         }
     }
+    span {
+        font-size: 14px;
+        color: white;
+        position: absolute;
+        border: solid orange;
+        height: 17px;
+        width: 17px;
+        padding-top: 0px;
+        border-radius: 70%;
+        margin-left: 39px;
+        background: orange;
+    }
+}
+
+.icon {
+    font-size: 54px;
+    color: grey;
 }
