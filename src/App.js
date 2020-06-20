@@ -16,13 +16,34 @@ function App() {
       y: -150,
       ease: Back.easeOut
     })
-    tl.from('.link', 1.3, {
+    tl.from('.link', 0.9, {
       opacity: 0,
       x: 70,
       ease: 'Power3.easeOut',
       stagger: {
         amount: 0.4
       }
+    })
+    tl.from('.shoe-cont', 0.9, {
+      opacity: 0,
+      y: 70,
+      ease: Back.easeOut,
+      stagger: 0.3
+    })
+    tl.from('.icon', 0.6, {
+      opacity: 0,
+      y: 70,
+      ease: Back.easeOut,
+      stagger: 0.3
+    })
+    tl.from('.c-icon', 0.6, {
+      opacity: 0,
+      y: 70,
+      ease: Back.easeOut,
+      stagger: 0.3
+    })
+    tl.from('.card', 0.7, {
+      opacity: 0,
     })
   }, [])
   return (
