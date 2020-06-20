@@ -5,9 +5,11 @@
     overflow: hidden;
     .logo {
         margin-top: 10px;
-        span {
+        a {
             font-weight: 700;
             font-size: 19px;
+            text-decoration: none;
+            color: #000;
         }
     }
     .nav-routes {
