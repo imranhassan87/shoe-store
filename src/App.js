@@ -42,9 +42,6 @@ function App() {
       ease: Back.easeOut,
       stagger: 0.3
     })
-    tl.from('.card', 0.7, {
-      opacity: 0,
-    })
   }, [])
   return (
     <div>
