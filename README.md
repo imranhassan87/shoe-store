@@ -1,6 +1,5 @@
-##Shoe Store example using react-router v6 and redux-toolkit
+## Shoe Store example using react-router v6 and redux-toolkit
 
-## Available Scripts
 
 In the project directory, you can run:
 
