@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Shoe Store example using react-router v6 and redux-toolkit
 
 ## Available Scripts
 
