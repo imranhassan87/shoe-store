@@ -4,7 +4,6 @@ import { store, clearBasket, remove } from '../store/store'
 
 const Basket = () => {
     const basket = useSelector(state => state.basket)
-    console.log(basket)
     const amount = basket.map(p => p.price)
     const totalAmount = amount.reduce((amt, item) => (amt += item), 0).toFixed(2)
     return (

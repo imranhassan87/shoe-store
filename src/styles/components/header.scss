@@ -1,15 +1,17 @@
 .header {
     height: 65px;
-    background: #7e5aa7;
+    background: #000;
     width: 100%;
     overflow: hidden;
+
     .logo {
         margin-top: 10px;
+        color: #fff;
         a {
+            color: #fff;
             font-weight: 700;
             font-size: 19px;
             text-decoration: none;
-            color: #000;
         }
     }
     .nav-routes {
@@ -20,7 +22,7 @@
             text-transform: uppercase;
             text-decoration: none;
             font-size: 17px;
-            color: #000;
+            color: #fff;
         }
     }
 }

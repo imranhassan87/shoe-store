@@ -11,6 +11,7 @@ const Items = () => {
                 <img src={require(`../images/${item.image}.jpg`)} alt="" />
                 <div className="card-info">
                     <h4>{item.title}</h4>
+                    <h2>Basit</h2>
                     <span>Rs. {item.price}</span>
                 </div>
                 <div className="btn-cont row space-between v-center">

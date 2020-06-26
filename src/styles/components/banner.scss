@@ -1,18 +1,19 @@
 .banner-section {
-    height: 300px;
+    height: 500px;
     width: 100%;
-
+    background: rgba(0, 0, 0, 0.3)
+        url("https://images.unsplash.com/photo-1587860238287-9186c98aa254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80")
+        fixed no-repeat center;
     .shoe-cont {
-        margin-top: 10px;
         position: static;
-        img {
-            width: 25%;
-        }
         h2 {
-            position: relative;
+            position: absolute;
+            color: #fff;
+            top: 400px;
             right: 0px;
             left: 0px;
             bottom: 50px;
+            font-size: 30px;
         }
     }
 }

@@ -7,6 +7,11 @@ import Contact from './components/Contact';
 import Header from './components/Header';
 import Basket from './components/Basket';
 import ItemDetails from './components/ItemDetails';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+AOS.init();
 
 function App() {
   useEffect(() => {

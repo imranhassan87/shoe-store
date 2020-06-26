@@ -7,9 +7,6 @@ const Banner = () => {
     return (
         <section className="banner-section v-center">
             <div className="shoe-cont" >
-                <img src={require('../images/shoe.png')}
-                    alt="s" /></div>
-            <div className="shoe-cont" >
                 <h2>The Best Selling Brands Store</h2>
             </div>
             <Link to='/basket'>
