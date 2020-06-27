@@ -5,7 +5,13 @@
         url("https://images.unsplash.com/photo-1587860238287-9186c98aa254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80")
         fixed no-repeat center;
     .shoe-cont {
+<<<<<<< HEAD
         position: static;
+=======
+        img {
+            width: 25%;
+        }
+>>>>>>> parent of ffc5f17... updated icon
         h2 {
             position: absolute;
             color: #fff;
@@ -16,6 +22,7 @@
             font-size: 30px;
         }
     }
+<<<<<<< HEAD
 }
 .c-icon {
     font-size: 14px;
@@ -33,4 +40,6 @@
 .icon {
     font-size: 54px;
     color: grey;
+=======
+>>>>>>> parent of ffc5f17... updated icon
 }
