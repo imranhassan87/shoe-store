@@ -8,13 +8,12 @@ const Banner = () => {
     return (
         <section className="banner-section v-center">
             <div className="shoe-cont" >
-                <h2>The Best Selling Brands Store</h2>
+                <img src={require('../images/shoe.png')} alt="shoe" />
             </div>
             <Link to='/basket'>
                 <span className="c-icon">{basket.length}</span>
-                <i className="fa icon">&#xf07a;</i>
+                <i className="fa icon-basket">&#xf07a;</i>
             </Link>
-            <Link to='/basket'><FaShoppingCart color="#ccc" size='3rem' style={{ position: 'relative', bottom: 45 }} /></Link>
         </section>
     )
 }

@@ -35,7 +35,7 @@ function App() {
       ease: Back.easeOut,
       stagger: 0.3
     })
-    tl.from('.icon', 0.6, {
+    tl.from('.icon-basket', 0.6, {
       opacity: 0,
       y: 70,
       ease: Back.easeOut,

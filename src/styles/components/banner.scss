@@ -1,15 +1,15 @@
 .banner-section {
-    height: 500px;
+    height: 380px;
     width: 100%;
     .shoe-cont {
+        margin-top: 40px;
         position: static;
         img {
             width: 25%;
         }
         h2 {
             position: absolute;
-            color: #fff;
-            top: 400px;
+            top: 200px;
             right: 0px;
             left: 0px;
             bottom: 50px;
@@ -23,14 +23,14 @@
     position: absolute;
     border: solid orange;
     height: 17px;
+    z-index: 9;
     width: 17px;
-    z-index: 4;
     padding-top: 0px;
     border-radius: 70%;
     margin-left: 39px;
     background: orange;
 }
-.icon {
+.icon-basket {
     font-size: 54px;
     color: grey;
 }
