@@ -31,9 +31,14 @@ function App() {
     })
     tl.from('.shoe-cont', 0.9, {
       opacity: 0,
-      y: 70,
+      y: 50,
       ease: Back.easeOut,
       stagger: 0.3
+    })
+    tl.from('.brand', 0.4, {
+      opacity: 0,
+      y: 10,
+      ease: Back.easeOut,
     })
     tl.from('.icon-basket', 0.6, {
       opacity: 0,

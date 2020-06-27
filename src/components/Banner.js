@@ -9,6 +9,7 @@ const Banner = () => {
             <div className="shoe-cont" >
                 <img src={require('../images/shoe.png')} alt="shoe" />
             </div>
+            <div className="brand">The Best Selling Brands</div>
             <Link to='/basket'>
                 <span className="c-icon">{basket.length}</span>
                 <i className="fa icon-basket">&#xf07a;</i>

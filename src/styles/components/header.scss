@@ -12,6 +12,7 @@
             font-weight: 700;
             font-size: 19px;
             text-decoration: none;
+            margin-left: 20px;
         }
     }
     .nav-routes {
@@ -23,6 +24,10 @@
             text-decoration: none;
             font-size: 17px;
             color: #fff;
+            margin-right: 25px;
+            &:last-child {
+                margin-right: 40px;
+            }
         }
     }
 }
