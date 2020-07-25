@@ -5,9 +5,6 @@ const Header = () => {
     return (
         <nav className="header">
             <div className="container row space-between v-center">
-                <div className="logo">
-                    <Link to='/'>SHOE STORE</Link>
-                </div>
                 <div className="nav-routes">
                     <ul className="row">
                         <Link className='link' to='/'>Home</Link>
